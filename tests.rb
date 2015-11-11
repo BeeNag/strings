@@ -41,12 +41,12 @@ class TestString < Minitest::Test
 
   # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-include-3F
   def test_if_a_string_contains_a_sub_string  	
-    skip "waiting to be implemented"
+    
     # sub string is a smaller string in a larger one
     str_1 = "hello there world"
     sub_string = "ll"
 
-    actual = false # use the method in the docs above to see if str_1 contains the sub_string
+    actual = "hello there world".include? "ll"
 
     assert(actual)
   end
@@ -74,7 +74,7 @@ class TestString < Minitest::Test
   end
 
   # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-strip
-  def test_convert_a_string_representation_of_a_number_to_a_real_number
+  def test_script_white_spaces
     skip "waiting to be implemented"
     str_1 = "  word   "
     actual = str_1 # use the method in the docs above to strip off the extra spaces
