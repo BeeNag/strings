@@ -31,10 +31,10 @@ class TestString < Minitest::Test
 
   # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-length
   def test_the_length_of_a_string
-    skip "waiting to be implemented"
+    
     str_1 = "abc"
 
-    actual = 1 # replace 1 the logic to get the length of the string - read the docs
+    actual = str_1.length.to_i
 
     assert_equal(3, actual)
   end
