@@ -29,7 +29,7 @@ class TestString < Minitest::Test
     assert_equal("John Snow", actual)
   end
 
-  # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-length
+  
   def test_the_length_of_a_string
     
     str_1 = "abc"
@@ -39,10 +39,10 @@ class TestString < Minitest::Test
     assert_equal(3, actual)
   end
 
-  # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-include-3F
+  
   def test_if_a_string_contains_a_sub_string  	
     
-    # sub string is a smaller string in a larger one
+    
     str_1 = "hello there world"
     sub_string = "ll"
 
@@ -51,7 +51,7 @@ class TestString < Minitest::Test
     assert(actual)
   end
 
-  # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-capitalize
+  
   def test_capatalizing_a_string  	
     
     str_1 = "mark"
@@ -62,10 +62,10 @@ class TestString < Minitest::Test
   def test_the_string_representation_of_a_number_is_not_equal_to_a_real_number
     
     str_1 = "5"
-    refute_equal(5, str_1) # refute equal means the test will pass if they are not equal
+    refute_equal(5, str_1) 
   end
 
-  # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-to_i
+  
   def test_convert_a_string_representation_of_a_number_to_a_real_number
     
     str_1 = "50"
@@ -73,7 +73,7 @@ class TestString < Minitest::Test
     assert_equal(50, actual)
   end
 
-  # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-strip
+  
   def test_script_white_spaces
     
     str_1 = "  word   "
