@@ -82,11 +82,11 @@ class TestString < Minitest::Test
   end
 
   def test_join_and_capatalize_two_strings
-    skip "waiting to be implemented"
+    
     first = "mark"
     last = "smith"
 
-    actual = "a" # replace "a" the logic to capitalize and join the strings
+    actual = "#{first.capitalize} #{last.capitalize}"
 
     assert_equal("Mark Smith", actual)
   end
