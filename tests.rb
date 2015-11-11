@@ -10,11 +10,11 @@ class TestString < Minitest::Test
   end
 
   def test_join_two_string_with_a_plus
-    skip "waiting to be implemented"
+    
     str_1 = "abc"
     str_2 = "xyz"
 
-    actual = "a" # replace "a" the logic to join to strings: str_1 + str_2
+    actual = str_1 + str_2
 
     assert_equal("abcxyz", actual)
   end
@@ -60,7 +60,7 @@ class TestString < Minitest::Test
   end
 
   def test_the_string_representation_of_a_number_is_not_equal_to_a_real_number
-    # skip "waiting to be implemented"
+    skip "waiting to be implemented"
     str_1 = "5"
     refute_equal(5, str_1) # refute equal means the test will pass if they are not equal
   end
