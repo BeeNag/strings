@@ -67,9 +67,9 @@ class TestString < Minitest::Test
 
   # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-to_i
   def test_convert_a_string_representation_of_a_number_to_a_real_number
-    skip "waiting to be implemented"
+    
     str_1 = "50"
-    actual = str_1 # use the method in the docs above to convert the string to a number
+    actual = "50".to_i
     assert_equal(50, actual)
   end
 
