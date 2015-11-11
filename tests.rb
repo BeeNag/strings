@@ -60,7 +60,7 @@ class TestString < Minitest::Test
   end
 
   def test_the_string_representation_of_a_number_is_not_equal_to_a_real_number
-    skip "waiting to be implemented"
+    
     str_1 = "5"
     refute_equal(5, str_1) # refute equal means the test will pass if they are not equal
   end
