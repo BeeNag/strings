@@ -20,11 +20,11 @@ class TestString < Minitest::Test
   end
 
   def test_join_two_string_with_alternate_syntax
-    skip "waiting to be implemented"
+    
     first = "John"
     last = "Snow"
 
-    actual = "a" # replace "a" the logic to join to strings: "#{first} #{last}"
+    actual = "#{first} #{last}"
 
     assert_equal("John Snow", actual)
   end
