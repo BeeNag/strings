@@ -75,9 +75,9 @@ class TestString < Minitest::Test
 
   # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-strip
   def test_script_white_spaces
-    skip "waiting to be implemented"
+    
     str_1 = "  word   "
-    actual = str_1 # use the method in the docs above to strip off the extra spaces
+    actual = "  word  ".lstrip
     assert_equal("word", actual)
   end
 
