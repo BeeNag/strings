@@ -53,9 +53,9 @@ class TestString < Minitest::Test
 
   # docs: http://ruby-doc.org/core-2.2.0/String.html#method-i-capitalize
   def test_capatalizing_a_string  	
-    skip "waiting to be implemented"
+    
     str_1 = "mark"
-    actual = str_1 # use the method in the docs above to capitalize the string
+    actual = "mark".capitalize
     assert_equal("Mark", actual)
   end
 
